@@ -32,7 +32,7 @@ return new Action<IConfigContext>((IConfigContext context) =>
     var background = new Color(0x0, 0x0, 0x0);
 
     /* Config */
-    context.CanMinimizeWindows = false;
+    context.CanMinimizeWindows = true;
 
     /* Gap */
     var gap = barHeight - 8;
@@ -53,7 +53,7 @@ return new Action<IConfigContext>((IConfigContext context) =>
         {
             // new ActiveLayoutWidget(),
             // new BatteryWidget(),
-            new TimeWidget(1000, "HH:mm:ss dd-MMM-yyyy"),
+            new TimeWidget(1000, "dd/MM/yyyy HH:mm:ss"),
         }
     });
 
